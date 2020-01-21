@@ -1,16 +1,18 @@
-//Complete the necessary code in this file
-import React from "react";
+import React, { useState } from "react";
 import Post from "./Post";
 import "./Posts.css";
 
-// pass the data from App.js down as props then map through the data
-const PostsPage = () => {
+const PostsPage = props => {
+  const [likes, setLikes] = useState(props.data.likes);
   return (
     <div className="posts-container-wrapper">
-      {/* map through data here */}
+      {props.data.map(x => (
+        <div>
+          <Post className="box" key={x.imageUrl} data={x} />
+        </div>
+      ))}
     </div>
   );
 };
 
 export default PostsPage;
-
