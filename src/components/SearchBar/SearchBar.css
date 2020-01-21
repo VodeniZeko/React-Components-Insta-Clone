@@ -8,14 +8,16 @@
 }
 .search-form {
   width: 150px;
-  font-size: 14px;
+  font-size: 1.3rem;
 }
 .search-form input {
   text-align: center;
   color: #262626;
+  transform: scale(0.8);
 }
 .image-wrapper {
-  height: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo-image {
@@ -28,4 +30,17 @@
 
 .social {
   width: 50px;
+  transform: scale(2);
+}
+
+.insta {
+  transform: scale(2);
+  font-family: cursive;
+  font-weight: 900;
+  margin: 3px;
+}
+
+.fab {
+  margin-right: 2em;
+  transform: scale(2);
 }

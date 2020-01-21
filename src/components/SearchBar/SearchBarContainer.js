@@ -6,13 +6,12 @@ const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
-        <i className="fab fa-instagram" />
+        <i className="fab fa-instagram f3" />
+        <div className=" insta">| instagram</div>
       </div>
+
       <form className="search-form">
-        <input
-          type="text"
-          placeholder="Search"
-        />
+        <input type="text" placeholder="Search" />
       </form>
       <div className="social-wrapper">
         <div className="social">
